@@ -1,0 +1,35 @@
+pipeline{
+          agent any
+             stages{
+               stage('checkout'){
+
+                 steps{
+                   checkout scm
+
+                          }
+                        }
+                 stages{
+
+               stage('build'){
+
+                 steps{
+                sh'mvn install' 
+
+                          }
+                        }
+
+                  }
+}
+
+
+
+
+              
+                        
+                        
+                        
+                       
+
+
+                 
+                    
