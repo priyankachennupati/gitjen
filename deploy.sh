@@ -2,7 +2,7 @@
 ENVIRONMENT=$i
 if [ $ENVIRONMENT = "QA" ]
 then
-for i in 'cat IPs txt'
+for i in 'cat ip.txt' 
 do
   echo "Deploying war file into $i QA server.."
   sleep 3
